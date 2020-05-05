@@ -14,7 +14,7 @@
         
         }
 
-        .container {background-color: whitesmoke;
+        .container.responsive {background-color: whitesmoke;
         padding: 20px;
         margin: 30px;
         border: 1px solid;
@@ -28,8 +28,19 @@
         img {display: block;
         margin-left: auto;
         margin-right:auto;
+        width: 300px;
+        height: 200px;        
         }
 
+        @media only screen and (max-width: 840px) {
+        table.responsive {
+        margin-bottom: 0;
+        overflow: hidden;
+        overflow-x: scroll;
+        display: block;
+        white-space: nowrap;
+            }
+        }       
         
 
 
@@ -39,7 +50,7 @@
 
 <body>
 
-    <nav class="navbar navbar-light bg-light"></nav>
+    <nav class="navbar navbar-light bg-light" style="color: white;"></nav>
      
     
           <ul class="nav justify-content-end">
@@ -52,6 +63,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/me/">Facebook</a>
+                </li>
             </ul>
 
             </nav>
@@ -61,9 +75,29 @@
             <main class="container">
                 <!-- Content here -->
 
-            <img src="https://via.placeholder.com/300" ></a>
-            <br>
-            <img src="https://via.placeholder.com/300" ></a>
+                <table>
+                    <tbody>
+                        <tr> 
+
+                        <td><img src="https://images.freeimages.com/images/small-previews/1f8/delicate-arch-1-1391746.jpg" alt="arch" class="responsive"></td>
+                        <td><img src="https://images.freeimages.com/images/small-previews/b89/glacier-national-park-series-1-1411075.jpg" alt="glacier park" class="responsive"></td>
+                    </tr>
+
+                    <tr>            
+                        <td><img src="https://media.gettyimages.com/photos/yosemite-national-park-picture-id509307146?b=1&k=6&m=509307146&s=612x612&w=0&h=FT8ndDvdr1a36yQhiQR_LXNgUO6FEzbNiv4XvrBzduc=" alt="yosemite" class="responsive" ></td>
+                        <td><img src="https://images.freeimages.com/images/small-previews/398/glacial-1399935.jpg" alt="glacial" class="responsive"></td>
+
+                    </tr>
+
+                    <tr>
+            
+                        <td><img src="https://images.freeimages.com/images/small-previews/ad5/escalante-2-1391686.jpg" alt="escalante" class="responsive"></td>
+
+                    </tr>
+                    </tbody>
+                    
+                    </table>    
+            
 
  
     
